@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.miniproject.makepre">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@drawable/images3">
+
+
+        <EditText
+            android:id="@+id/editText_makepre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:hint="enter your address"
+            />
+
+        <EditText
+            android:id="@+id/editText2_makepre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="enter your UID number"
+            android:layout_below="@+id/editText_makepre"
+            android:layout_alignLeft="@+id/editText_makepre"
+            android:layout_alignStart="@+id/editText_makepre" />
+
+        <TextView
+            android:id="@+id/warnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Above details are needed for the user to bid in the auction ,so you are requested to fill the information with care to avoid future conflicts"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" />
+
+        <Button
+            android:id="@+id/make_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="make payment"
+            android:background="#F44336"
+            android:layout_below="@+id/editText2_makepre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp" />
+    </RelativeLayout>
+</LinearLayout>

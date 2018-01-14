@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.miniproject.Main3Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:layout_marginBottom="166dp"
+            android:text="Forgot Your Password ?" />
+        <TextView
+            android:id="@+id/clickhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textInputLayout"
+        android:layout_alignLeft="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_marginBottom="13dp">
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#F44336"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_alignRight="@+id/textInputLayout"
+        android:layout_alignEnd="@+id/textInputLayout" />
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:background="#F44336"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_alignRight="@+id/textInputLayout"
+        android:layout_alignEnd="@+id/textInputLayout" />
+
+
+</RelativeLayout>
+
+

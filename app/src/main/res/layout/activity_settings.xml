@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.miniproject.settings"
+    android:background="@drawable/images">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_profilephoto"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            app:civ_border_width="0dp"
+            android:src="@mipmap/ic_account_circle_black_48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:fitsSystemWindows="true"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/setting_username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/setting_premium_textview"
+            android:layout_alignRight="@+id/setting_premium_textview"
+            android:layout_below="@+id/setting_profilephoto"
+            android:layout_marginTop="31dp"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center" />
+
+        <AutoCompleteTextView
+            android:id="@+id/setting_email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setting_username"
+            android:layout_alignStart="@+id/setting_username"
+            android:layout_below="@+id/setting_username"
+            android:layout_marginTop="16dp"
+            android:hint="email address"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center" />
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBox2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Buyer"-->
+        <!--android:layout_alignBaseline="@+id/checkBox"-->
+        <!--android:layout_alignBottom="@+id/checkBox"-->
+        <!--android:layout_toRightOf="@+id/checkBox3"-->
+        <!--android:layout_toEndOf="@+id/checkBox3" />-->
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Artist"-->
+        <!--tools:layout_editor_absoluteY="211dp"-->
+        <!--tools:layout_editor_absoluteX="58dp"-->
+        <!--android:layout_below="@+id/autoCompleteTextView"-->
+        <!--android:layout_toLeftOf="@+id/checkBox3"-->
+        <!--android:layout_toStartOf="@+id/checkBox3"-->
+        <!--android:layout_marginTop="22dp" />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/setting_phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setting_email"
+            android:layout_alignStart="@+id/setting_email"
+            android:layout_below="@+id/setting_email"
+            android:layout_marginTop="23dp"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/setting_Apply_premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F44336"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="apply" />
+
+        <Button
+            android:id="@+id/setting_premium"
+            android:layout_width="wrap_content"
+            android:background="#F44336"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/setting_premium_textview"
+            android:layout_alignBottom="@+id/setting_premium_textview"
+            android:layout_centerHorizontal="true"
+            android:text="upgrade to premium" />
+
+        <TextView
+            android:id="@+id/setting_premium_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="You are premiumn"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</LinearLayout>

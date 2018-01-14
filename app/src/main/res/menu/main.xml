@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_filter"
+        android:title="Filter"
+        android:icon="@mipmap/filter"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/Price"
+                android:title="Price"
+                />
+
+            <item
+                android:id="@+id/Artist"
+                android:title="Artist" />
+
+
+        </menu>
+
+
+    </item>
+
+</menu>

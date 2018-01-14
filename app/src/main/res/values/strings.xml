@@ -1,0 +1,33 @@
+<resources>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="app_name">Miniproject</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+
+    <!-- Welcome Activity -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide1_title">Hello ART LOVERS</string>
+    <string name="slide1_desc">The easiest way to GET your FAVOURITE arts pieces!</string>
+
+    <string name="slide2_title">PAINTING,CERAMICS,  SCULPTURE and MANY MORE </string>
+    <string name="slide22_desc">Look for the art you like from various   option add to wishlist</string>
+
+    <string name="slide3_title">BIDDING</string>
+    <string name="slide3_desc">Become premium account holder and BID on the best arts </string>
+
+    <string name="slide4_title">BUYING AND SELLING</string>
+    <string name="slide4_desc">Artist or Buyer doesnt matter enjoy both </string>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.miniproject">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Place_bid" />
+        <activity android:name=".Place_order" />
+        <activity android:name=".On_bid" />
+        <activity
+            android:name=".On_sale"
+            android:configChanges="orientation" />
+        <activity android:name=".Paintiing_Upload" />
+        <activity android:name=".settings" />
+        <activity android:name=".makepre" />
+        <activity android:name=".mkpay" />
+        <activity
+            android:name=".Filter_Popup"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Price_Filter"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".MyUploads"></activity>
+    </application>
+
+</manifest>

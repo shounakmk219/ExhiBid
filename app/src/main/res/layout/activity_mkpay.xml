@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images1"
+    tools:context="com.example.admin.miniproject.mkpay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/mkpremium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:background="#F44336"
+            android:layout_marginBottom="167dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/mkpay_imageView3"
+            android:layout_alignEnd="@+id/mkpay_imageView3" />
+
+        <TextView
+            android:id="@+id/mkpay_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="FOR THE USER TO BECOME PREMIUM THEY HAVE TO PAY REGISTRATION FEES AS TO GURANTEE THE FRAUD CASES "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/amtpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="80dp"
+            android:layout_above="@+id/mkpremium"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/mkpay_imageView3"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignBottom="@+id/amtpre"
+            android:layout_alignTop="@+id/amtpre"
+            android:layout_toEndOf="@+id/amtpre"
+     android:layout_toRightOf="@+id/amtpre"
+            android:elevation="1dp"
+            app:srcCompat="@drawable/rupee" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
